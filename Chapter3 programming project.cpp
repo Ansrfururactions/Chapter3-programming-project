@@ -12,7 +12,7 @@ int main()
 
 
 	cout << "please enter your desired amount of cookies";
-	cin >> cookieamt;//allows the user to input their desired amount, which gets assigned to the cookieamt float
+	cin >> cookieamt;//allows the user to input their desired amount, which gets stored in the cookieamt float
 
 	cupsugar = cookieamt * cupsugar, cupbutter = cookieamt * cupbutter, cupflour = cookieamt * cupflour; // multiplies the ingredient variables by the input given
 	
