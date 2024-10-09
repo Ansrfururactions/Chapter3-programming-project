@@ -2,19 +2,30 @@
 //
 
 #include <iostream>
+#include <cmath>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	float principle, intrest, compound, intrestrate, savings;
+
+	cout << "enter your principle" << endl;
+	cin >> principle;
+
+	cout << "enter your intrest rate" << endl;
+	cin >> intrestrate;
+	
+	intrestrate = intrestrate/100;
+
+	intrest = principle * intrestrate;
+
+	cout << "enter enter the amount of times your interest is compounded" << endl;
+	cin >> compound;
+
+	savings = principle * pow(1 + (intrestrate / compound), compound);
+
+	cout << "principle: " << principle << endl << "intrest rate: " << intrestrate << endl << "intrest: " << intrest << endl << "amount of times compounded: " << compound << endl << "amount of savings: " << savings << endl;
+	return 0;
+
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
