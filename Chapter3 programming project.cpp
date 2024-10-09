@@ -3,11 +3,12 @@
 
 #include <iostream>
 #include <random>
+using namespace std;
 
 int main()
 {
-    std::default_random_engine generator;
-    std::uniform_int_distribution<int> distribution(-999, 999);
+    default_random_engine generator;
+    uniform_int_distribution<int> distribution(-999, 999);
 
     int variableone = distribution(generator), variabletwo = distribution(generator), answer=variableone + variabletwo;
 
