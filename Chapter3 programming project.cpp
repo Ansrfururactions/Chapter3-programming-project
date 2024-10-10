@@ -1,5 +1,5 @@
-// Chapter3 programming project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Carey Barber
+// 10|1|2024
 
 #include <iostream>
 #include <random>
