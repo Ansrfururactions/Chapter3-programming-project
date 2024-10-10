@@ -1,5 +1,4 @@
-// Chapter3 programming project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
 #include <cmath>
@@ -10,21 +9,21 @@ int main()
 	float principle, intrest, compound, intrestrate, savings;
 
 	cout << "enter your principle" << endl;
-	cin >> principle;
+	cin >> principle; //stores principle
 
 	cout << "enter your intrest rate" << endl;
-	cin >> intrestrate;
+	cin >> intrestrate; //stores the intrest rate
 	
-	intrestrate = intrestrate/100;
+	intrestrate = intrestrate/100; //turns the intrest rate into a decimal
 
-	intrest = principle * intrestrate;
+	intrest = principle * intrestrate; //calculates intrest amount
 
 	cout << "enter enter the amount of times your interest is compounded" << endl;
-	cin >> compound;
+	cin >> compound; //stores the amount of times the intrest is compounded
 
-	savings = principle * pow(1 + (intrestrate / compound), compound);
+	savings = principle * pow(1 + (intrestrate / compound), compound); //calculates savings
 
-	cout << "principle: " << principle << endl << "intrest rate: " << intrestrate << endl << "intrest: " << intrest << endl << "amount of times compounded: " << compound << endl << "amount of savings: " << savings << endl;
+	cout << "principle: " << principle << endl << "intrest rate: " << intrestrate << endl << "intrest: " << intrest << endl << "amount of times compounded: " << compound << endl << "amount of savings: " << savings << endl;//displays results
 	return 0;
 
 }
