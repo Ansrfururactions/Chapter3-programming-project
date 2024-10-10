@@ -16,10 +16,10 @@ int main()
 
     int answer= variableone + variabletwo, studentresponse; //defines all variables relevant to answering the question
     
-    cout << variableone << " + " << variabletwo << " = ? " << endl;
-    cin >> studentresponse;
+    cout << variableone << " + " << variabletwo << " = ? " << endl; //asks for the answer
+    cin >> studentresponse; //stores the student's response
 
-    if (answer == studentresponse)
+    if (answer == studentresponse) //checks if student's response is correct
     
         cout << "correct!" << endl;
     else
